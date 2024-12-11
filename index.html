@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Project Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Register Your Science Project</h1>
+            <p>Submit your project details below.</p>
+        </div>
+        <form action="process.php" method="POST" class="form-body">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Project Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter your project title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Math">Mathematics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Project Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
